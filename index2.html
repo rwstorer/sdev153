@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Demo</title>
+        <script>
+            function colorChange() {
+                let div1 = document.getElementById('div1');
+                let theColor = prompt('Enter a valid color name [red, blue, orange]: ', 'red');
+                const colorArray = ['red', 'blue', 'orange'];
+                if (colorArray.indexOf(theColor) >= 0) {
+                    div1.style['color'] = theColor;
+                }
+                else {
+                    window.alert('You choose an invalid color: ' + theColor + '!');
+                }
+            }
+            function printDate() {
+                let div2 = document.getElementById('div2');
+                div2.innerHTML = '<span>' + Date() + '</span>' + div2.innerHTML;
+            }
+        </script>
+    </head>
+<body>
+<div id="div1">
+    some cool text
+    <button type="button" id="btn1" onclick="colorChange()">Change my Color</button>
+</div>
+<div id="div2">
+    <button type="button" id="btn2" onclick="printDate()">print date</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pacific Trails Resort :: Reservations</title>
+        <link rel="stylesheet" href="./pacificcss/pacific.css">
+    </head>
+<body>
+    
+    <header>
+        <h1><a href="index.html">Pacific Trails Resort</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="yurts.html">Yurts</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+
+    <div id="reshero" name="reshero">
+
+    </div>
+
+    <main>
+        <h2>Reservations at Pacific Trails</h2>
+        <h3>Contact Us</h3>
+        <p>Required fields are marked with an asterisk <span class="redAsterisk">*</span>.</p>
+        <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+            <label for="myFName"><span class="redAsterisk">*</span>First Name:</label>
+            <input type="text" name="myFName" required id="myFName">
+            <label for="myLName"><span class="redAsterisk">*</span>Last Name:</label>
+            <input type="text" name="myLName" required id="myLName">
+            <label for="myEmail"><span class="redAsterisk">*</span>E-mail:</label>
+            <input type="email" name="myEmail" required id="myEmail">
+            <label for="myPhone">Phone:</label>
+            <input type="tel" name="myPhone" id="myPhone">
+            <label for="myDate">Arrival Date:</label>
+            <input type="date" name="myDate" id="myDate">
+            <label for="myNights">Nights:</label>
+            <input type="number" min="1" max="14" name="myNights" id="myNights">
+            <label for="myComments"><span class="redAsterisk">*</span>Comments:</label>
+            <textarea rows="2" cols="20" name="myComments" id="myComments" required></textarea>
+            <input type="submit">
+        </form>
+
+    </main>
+    <footer>
+        Copyright &copy; 2020 Pacific Trails Resort <br>
+        <a href="mailto:raystorer@myemail.com">raystorer@myemail.com</a>
+    </footer>
+    </div>
+</body>
+</html>

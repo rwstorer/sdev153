@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+.redAsterisk {
+    color: red;
+}
+
+a:link {
+    color: #5C7FA3;
+}
+
+a:visited {
+    color: #344873;
+}
+
+a:hover {
+    color: #A52A2A;
+    background-color: darkblue;
+    font-size: 1.10em;
+}
+
+#wrapper {
+    background-color: white;
+    /*
+    min-width: 960px;
+    max-width: 2048px;
+    */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+    background-color: #90C7E3;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+dt {
+    color: darkblue;
+    font-weight: bold;
+}
+
+header {
+    padding: 1em;
+    background-color: #002171;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: lightblue;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2 {
+    color: mediumblue;
+    font-family: Georgia, serif;
+}
+
+h3 {
+    font-family: Georgia, serif;
+}
+
+nav {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: white;
+}
+
+nav a { text-decoration: none; }
+
+nav li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.resort {
+    color: mediumblue;
+    font-size: 1.2em;
+}
+
+footer {
+    padding: 1em;
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    background-color: white;
+}
+
+main {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(../images/coast.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(../images/trail.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+#shophero {
+    height: 300px;
+    background-image: url(../images/psunset.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(../images/yurt.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+section {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.shop {
+    margin: 1em;
+    background-color: #F4F4F4;
+}
+
+.shop img {
+    padding: 1em;
+    float: right;
+}
+
+.shop form {
+    clear: right;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none;
+}
+
+table {
+    border: 1px solid blue;
+    border-collapse: collapse;
+    /* trying to center the table to the left and right margins */
+    margin: auto;
+    width: 90%;
+}
+
+table td, th {
+    padding: 5px;
+    border: 1px solid darkblue;
+}
+
+table td {
+    text-align: center;
+}
+
+table tr:nth-of-type(even) {
+    /* background-color: #DFEDF8; */
+    background-color: darkgreen;
+    color: gold;
+}
+
+table tbody tr:hover {
+    background-color: rgb(125, 0, 125);
+    color: yellow;
+}
+
+.text {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+
+input, textarea {
+    margin-bottom: 0.5em;
+}
+
+#reshero {
+    height: 300px;
+    background-image: url(../images/ocean.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+@media (width >= 600px) {
+    form {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 10em 1fr;
+        gap: 1em;
+    }
+
+    input[type=submit] {
+        grid-column: 2/3;
+        width: 9em;
+    }
+
+    #reshero {
+        background-size: 100% 100%;
+    }
+
+    #shophero {
+        background-size: 100% 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 0.25em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+
+    nav li {
+        width: 12em;
+        border-bottom: none;
+    }
+
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    #homehero, #yurthero, #trailhero {
+        background-size: 100% 100%;
+    }
+}
+
+@media (width >= 1024px) {
+    body {
+        background-image: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);
+        background-repeat: no-repeat;
+    }
+
+    nav ul {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #wrapper {
+        width: 80%;
+        margin: auto;        
+    }
+}
